@@ -1,146 +1,164 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
 }
-body{
-  font-family: "Roboto", sans-serif;
-background-color: aliceblue;
-color: black ;
+
+body {
+  background-color: #fff6f0;
+  overflow-x: hidden;
 }
-header{
+
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 60px;
-  background-color: aliceblue;
-  box-shadow: 0 2px 5px rgba(0, 0,0, 1);
+  padding: 20px 80px;
+  background: white;
+  box-shadow: 0 2px 10px rgba(240, 150, 105);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
-.logo{
+
+.logo {
   display: flex;
   align-items: center;
-  gap: 10px;
+  font-size: 20px;
 }
-.logo img{
-  height: 30px;
+
+.logo img {
+  width: 30px;
+  margin-right: 10px;
 }
-.logo h1 span{
+
+.logo strong {
   color: orangered;
 }
-nav ul{
-  list-style: none;
-  display: flex;
-  gap: 30px;
-}
-nav ul li a{
+
+nav a {
+  margin-left: 30px;
   text-decoration: none;
-  color: black;
+  color: #333;
   font-weight: 500;
 }
-nav ul li a:hover{
+
+nav a:hover {
   color: orangered;
 }
-main{
+
+.hero {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 60px;
+  padding: 80px 60px;
   gap: 60px;
+  flex-wrap: wrap;
 }
-.product-image{
-  position: relative;
-}
-.product-image img{
-  width: 400px;
-}
-.product-info h2{
-  color: orangered;
-  font-weight: 900;
-  font-size: 32px;
-}
-.product-info h1{
-  font-size: 42px;
-  color: #2f2f4f;
-  margin: 10px;
-}
-.product-info p{
-  max-width: 400px;
-  margin: 20px;
-  color: dimgray;
-  line-height: 1.5;
-}
-.product-info button {
-  background-color: blue;
-  color: white;
-  padding: 14px 30px;
-  border: none;
-  font-size: 16px;
-  border-radius: 6px;
-  cursor: pointer;
-  display: inline-flex;
+
+.product-image {
+  width: 500px;
+  height: 500px;
+  display: flex;
   align-items: center;
-  gap: 10px;
+  justify-content: center;
+  
+}
+
+.product-image img {
+  width: 90%;
+}
+
+.product-info {
+  max-width: 500px;
+}
+
+.product-info h1 {
+  font-size: 45px;
+  color: #1e1e4f;
+  line-height: 1.2;
+}
+
+.product-info h1 span {
+  color: orangered;
+}
+
+.product-info p {
+  margin: 20px 0;
+  color: #444;
+  font-size: 16px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3f51b5;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
   transition: 0.3s;
 }
-.product-info button:hover{
-  background-color: blue;
+
+.btn:hover {
+  background-color: #1d297b;
 }
-.menu-icon i {
+
+.section {
+  background: #e6e6e6;
+  padding: 60px 80px;
+}
+
+.section h2 {
+  margin-bottom: 30px;
   font-size: 24px;
   color: #333;
 }
-main {
-  padding: 20px;
+
+.card-container {
   display: flex;
-  flex-direction: column;
-  gap: 20px;
+  flex-wrap: wrap;
+  gap: 30px;
 }
-.product-card {
-  background: #fff;
+
+.card {
+  background: white;
   border-radius: 10px;
   padding: 20px;
-  text-align: center;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  width: 280px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
-.product-card img {
+
+.card img {
   width: 100%;
-  max-width: 300px;
+  height: 180px;
+  object-fit: contain;
+  margin-bottom: 15px;
 }
-.product-card h2 {
-  margin-top: 15px;
-  color: #2f2f4f;
+
+.card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
 }
-.product-card p {
-  color: #555;
-  margin: 10px 0;
+
+.card p {
   font-size: 14px;
+  margin-bottom: 15px;
+  color: #555;
 }
-.price-buy {
+
+.card-footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 10px;
 }
-.price-buy .price {
-  color: #f2644b;
+
+.card-footer span {
   font-weight: bold;
-  font-size: 18px;
+  color: orangered;
 }
-.price-buy button {
-  background: #3f51b5;
-  color: #fff;
-  border: none;
-  padding: 8px 16px;
-  border-radius: 4px;
-  font-size: 14px;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  cursor: pointer;
-}
-.price-buy button:hover {
-  background: #303f9f;
-}
+
 .newsletter {
   background: white;
   margin: 20px;
@@ -199,4 +217,3 @@ main {
 .category li {
   margin: 5px 0;
 }
-

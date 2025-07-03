@@ -1,64 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nike Shoes Website</title>
-    <link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <title>Nike React</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-   <header>
+  <header>
     <div class="logo">
-        <img src="http://upload.wikimedia.org/wikipedia/commons/a/a6/Logo_NIKE.svg" alt="Nike Logo">
-        <h1><span>NIKE</span>REACT</h1>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Logo_NIKE.svg" alt="Nike Logo">
+      <span>NIKE <span class="highlight">REACT</span></span>
     </div>
     <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#"></a>Product</li>
-            <li><a href="#"></a>About us</li>
-            <li><a href="#"></a>Contact us</li>
-        </ul>
+      <a href="#">Home</a>
+      <a href="#">Product</a>
+      <a href="#">About us</a>
+      <a href="#">Contact us</a>
     </nav>
-   </header>
-   <main>
-    <div class="product-image">
-        <img src="product 1.avif" alt="nike shoes react"></div>
-    <div class="product-info">
-     <h2>NIKE REACT</h2>
-     <h1>INFINITY RUN 2</h1>
-     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-     <button><i class="fa fa-cart-shopping"></i> BUY NOW</button>   
-    </div>
-   </main>
-<div class="menu-icon">
-      <i class="fa fa-bars"></i>
-    </div>
   </header>
 
-  <main>
-    <div class="product-card">
-      <img src="product 2.avif" alt="Nike Shoe 1"/>
-      <h2>Nike Shoes</h2>
-      <p>Lorem ipsum is simply dummy text of the printing and typesetting industry.</p>
-      <div class="price-buy">
-        <span class="price">RS 15,000</span>
-        <button><i class="fa fa-cart-shopping"></i> BUY NOW</button>
+    <!-- Hero Section -->
+  <section class="hero">
+    <div class="product-image">
+      <img src="product 1.avif" alt="Nike Shoe">
+    </div>
+    <div class="product-info">
+      <h1><span>NIKE REACT</span><br>INFINITY RUN 2</h1>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+      <a href="#" class="btn">🛒 BUY NOW</a>
+    </div>
+  </section>
+
+  <!-- Casual Shoes Section -->
+  <section class="section">
+    <h2>CASUAL SHOES</h2>
+    <div class="card-container">
+      <div class="card">
+        <img src="product 2.avif" alt="Nike Shoe">
+        <h3>Nike Shoe</h3>
+        <p>Lorem ipsum is simply dummy text of the printing and typesetting industry.</p>
+        <div class="card-footer">
+          <span>RS 15000</span>
+          <a href="#" class="btn">BUY NOW</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="product 3.webp" alt="Skate Shoe">
+        <h3>Sneakers Skate Shoe</h3>
+        <p>Lorem ipsum is simply dummy text of the printing and typesetting industry.</p>
+        <div class="card-footer">
+          <span>RS 15000</span>
+          <a href="#" class="btn">BUY NOW</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="product 4.avif" alt="Basketball Shoe">
+        <h3>Sneakers Basketball Shoe</h3>
+        <p>Lorem ipsum is simply dummy text of the printing and typesetting industry.</p>
+        <div class="card-footer">
+          <span>RS 15000</span>
+          <a href="#" class="btn">BUY NOW</a>
+        </div>
       </div>
     </div>
-
-    <div class="product-card">
-      <img src="product 3.webp" alt="Nike Shoe 2"/>
-      <h2>Nike Shoes</h2>
-      <p>Lorem ipsum is simply dummy text of the printing and typesetting industry.</p>
-      <div class="price-buy">
-        <span class="price">RS 20,000</span>
-        <button><i class="fa fa-cart-shopping"></i>BUY NOW</button>
-</div>
+  </section>
+<!-- Formal Shoes Section -->
+  <section class="section">
+    <h2>FORMAL SHOES</h2>
+    <div class="card-container">
+      <div class="card">
+        <img src="product 5.avif" alt="Nike Shoe">
+        <h3>Brown Office Shoe</h3>
+        <p>Lorem ipsum is simply dummy text of the printing and typesetting industry.</p>
+        <div class="card-footer">
+          <span>RS 12000</span>
+          <a href="#" class="btn">BUY NOW</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="product 6.webp" alt="Skate Shoe">
+        <h3>Black Nice Shoe</h3>
+        <p>Lorem ipsum is simply dummy text of the printing and typesetting industry.</p>
+        <div class="card-footer">
+          <span>RS 14000</span>
+          <a href="#" class="btn">BUY NOW</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="product 7.avif" alt="Basketball Shoe">
+        <h3>Green Basketball Shoe</h3>
+        <p>Lorem ipsum is simply dummy text of the printing and typesetting industry.</p>
+        <div class="card-footer">
+          <span>RS 13000</span>
+          <a href="#" class="btn">BUY NOW</a>
+        </div>
+      </div>
     </div>
-  </main>
+  </section>
+
+  <!-- Newsletter -->
   <section class="newsletter">
     <h2>SUBSCRIBE TO OUR NEWSLETTER</h2>
     <form>
@@ -99,5 +140,7 @@
       </ul>
     </div>
   </section>
+
 </body>
 </html>
+
