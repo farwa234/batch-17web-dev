@@ -158,6 +158,64 @@ nav a:hover {
   font-weight: bold;
   color: orangered;
 }
+.shopping {
+  text-align:center ;
+  padding: 30px 10px;
+
+}
+.shopping img {
+  width: 700px;
+  height: 450px;
+}
+.perfect{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+.perfect-card{
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow:0 2px 8px lightsalmon;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.perfect-card img {
+  width:150px ;
+  height:150px ;
+}.perfect-card h3 {
+  margin-bottom: 5px;
+  font-size: 1.1em;
+}
+
+.perfect-card p {
+  font-size: 0.95em;
+  color: #555;
+}
+
+/* Image Section */
+.shopping img {
+  max-width: 500px;
+  width: 100%;
+}
+  .perfect-card {
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 60px;
+  }
+
+  .perfect {
+    width: 50%;
+  }
+
+  .shopping img {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+
 
 .newsletter {
   background: white;
