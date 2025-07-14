@@ -159,12 +159,14 @@ nav a:hover {
   color: orangered;
 }
 .shopping {
-  text-align:center ;
+  display: flex;
   padding: 30px 10px;
-
+  justify-content: center;
+  align-items: center;
+  
 }
 .shopping img {
-  width: 700px;
+  width: 500px;
   height: 450px;
 }
 .perfect{
@@ -172,15 +174,20 @@ nav a:hover {
   flex-direction: column;
   gap: 20px;
   padding: 20px;
+  justify-content: center;
+  align-items: center;
 }
 .perfect-card{
   background-color: white;
-  border-radius: 10px;
-  padding: 20px;
+  border-radius: 50px;
+  padding: 60px;
   box-shadow:0 2px 8px lightsalmon;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 20px;
+  max-width: 500px;
+  margin: 0 auto;
 }
 .perfect-card img {
   width:150px ;
@@ -200,15 +207,7 @@ nav a:hover {
   max-width: 500px;
   width: 100%;
 }
-  .perfect-card {
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 60px;
-  }
 
-  .perfect {
-    width: 50%;
-  }
 
   .shopping img {
     width: 50%;
